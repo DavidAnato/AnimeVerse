@@ -60,7 +60,7 @@ $(document).ready(function() {
     });
 
     
-    var page = 1002;
+    var page = 1;
     var loading = false;
     var allAnimes = $('#allAnimes');
     var recommendAnimes = $('#recommendAnimes');
@@ -160,7 +160,7 @@ $(document).ready(function() {
             });
 
             loading = false;
-            page--;
+            page++;
             // Après le chargement, enlever la classe "disable-scroll"
             $('.skeletonRow').removeClass('disable-scroll');
             // Supprimer les éléments de skeleton screen
